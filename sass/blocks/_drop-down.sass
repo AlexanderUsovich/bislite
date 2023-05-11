@@ -1,0 +1,31 @@
+.drop-down
+	&:hover .drop-down__list
+		transform: rotateX(0deg)
+	&:hover > a
+		color: #2aacc8
+		border-color: #2aacc8
+		background-color: #fff
+		border-left: 1px solid rgb(232, 235, 241)
+	&__list
+		display: flex
+		flex-direction: column
+		position: absolute
+		width: 200px
+		padding: 10px 5px
+		background-color: #fff
+		border: 1px solid rgb(232, 235, 241)
+		border-top: none
+		box-shadow: 0px 5px 0px 0px rgba(42, 172, 200, 0.004)
+		border-bottom: 5px solid #2aacc8
+		transition: .3s
+		transform-origin: 0 0
+		transform: rotateX(-90deg)
+		a
+			padding: 12px
+			font-size: 13px
+			&:hover
+				color: #2aacc8
+		li + li a
+			border-top: 1px solid #e7e7e7
+		
+

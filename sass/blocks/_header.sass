@@ -1,0 +1,51 @@
+.header
+	background-color: #e8ebf1
+	// .header__inner
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		min-height: 120px
+	// .header__logo
+	&__logo
+		&-link
+			font-size: 50px
+			font-family: 'Lato', sans-serif
+			font-weight: 900
+			line-height: 1
+			span
+				color: #2aacc8
+				font-weight: 400
+	
+	&__drop-down
+		position: relative
+		& > a
+			position: relative
+			border-left: 1px solid transparent
+		& > a::after
+			content: ''
+			position: absolute
+			top: 16px
+			right: 9px
+			background: url(../icons/down-arrow.png)
+			width: 7px
+			height: 5px
+		& > a:hover
+			color: #2aacc8
+			border-color: #2aacc8
+			background-color: #fff
+			border-left: 1px solid rgb(232, 235, 241)
+	// .header__list
+	&__list
+		display: flex
+		gap: 15px
+		padding-right: 8px
+
+	// .header__link
+	&__link
+		padding: 0 25px 0 10px
+		font-size: 13px
+		line-height: 39px
+		font-weight: 700
+		text-transform: uppercase
+		border-top: 5px solid transparent
