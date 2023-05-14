@@ -1,0 +1,99 @@
+.clients
+	padding: 25px 0 40px
+	// .clients__inner
+	&__inner
+		display: flex
+		justify-content: space-between
+	// .clients__testimonials
+	&__testimonials
+		width: 440px
+		font-size: 14px
+		line-height: calc(24px/14px)
+		color: #363636
+		p
+			margin-top: 10px
+		small
+			font-weight: bold
+			font-style: italic
+			margin-top: 30px
+			display: block
+	// .clients__testimonials-title
+	&__testimonials-title
+		padding-left: 38px
+		&::before
+			content: ''
+			width: 24px
+			height: 23px
+			position: absolute
+			top: 0
+			left: 0
+			background: url(../icons/testimonials-icon.svg)
+	// .clients__logos
+	&__logos
+		width: 480px
+		// .clients__logos_title
+	&__logos-title
+		padding-left: 38px
+		&::before
+			content: ''
+			width: 24px
+			height: 20px
+			position: absolute
+			top: -5px
+			left: 0
+			background: url(../icons/clients-logo.svg)
+	// .clients__images
+	&__images
+		margin-top: 18px
+		display: grid
+		grid-template-columns: repeat(3, 160px)
+		grid-template-rows: repeat(2, 100px)
+	// .clients__images-item
+	&__images-item
+		border: 1px solid rgb(232, 235, 241)
+		background-color: rgb(255, 255, 255)
+		box-shadow: inset 0px 0px 25px 0px rgba(232, 235, 241, 0.4)
+		display: flex
+		justify-content: center
+		align-items: center
+	// .clients__download
+	&__download
+		background-color: #e8fcfe
+		padding: 35px 30px
+		border: 1px solid #81e4ed
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 40px
+		p
+			width: 612px
+			color: #363636
+			font-size: 16px
+			line-height: calc(26px/16px)
+	// .clients__download-btn
+	&__download-btn
+		color: #0d0707
+		font-size: 18px
+		line-height: 58px
+		text-transform: uppercase
+		font-weight: bold
+		display: block
+		padding-left: 70px
+		position: relative
+		width: 240px
+		height: 60px
+		border-radius: 8px
+		border: 1px solid rgb(42, 172, 200)
+		box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2),inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1)
+		background-image: linear-gradient(to top, rgb(42,172,200) 0%, rgb(96,206,222) 15%, rgb(114,218,230) 50%, rgb(129,228,237) 100%)
+		&::before
+			content: ''
+			position: absolute
+			top: 17px
+			left: 19px
+			width: 28px
+			height: 25px
+			background: url(../icons/download-icon.svg)
+
+
+
